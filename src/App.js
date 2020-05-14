@@ -23,6 +23,17 @@ const Wrapper = styled("div")`
       display: block;
       margin-top: 1rem;
     }
+    span.dark {
+      color: #27536B;
+      text-shadow: 2px 1px 3px #44444c;
+      letter-spacing: .1em;
+
+    }
+    span.light {
+      color: #EEA849;
+      text-shadow: 1px 1px 2px #44444c;
+      letter-spacing: .1em;
+    }
   }
 `;
 
@@ -42,7 +53,15 @@ const App = () => {
           theme={themeState.dark}
         ></Toggle>
         <h4>
-          {themeState.dark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          {themeState.dark ? (
+            <p>
+              Switch to <span className="light">Light</span> Mode
+            </p>
+          ) : (
+            <p>
+              Switch to <span className="dark">Dark</span> Mode
+            </p>
+          )}
         </h4>
       </div>
     </Wrapper>

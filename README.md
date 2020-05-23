@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is a sample project showcasing a simple implementation of Dark Mode for a React app using Hooks & Context.
 
+<!-- ![](name-of-giphy.gif) -->
+
 ## Setup
 
 To start using this example:
